@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ToDo-List</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1>It's a <%= myvar %></h1>
+        <h2>Lets make a To-Do List...</h2>
+        <ul>
+            <li>Buy Food</li>
+            <li>Cook Food</li>
+            <li>Eat Food</li>
+            <% for (var i=0; i<additem.length; i++) { %>
+                <li><%= additem[i] %></li>
+            <% } %>
+            <br>
+            <form action="/" method="POST">
+            <input type="text" name="item1" placeholder="What's Next">
+            <button type="submit">ADD</button>
+            
+            </form>
+        </ul>
+        <script src="" async defer></script>
+    </body>
+</html>
